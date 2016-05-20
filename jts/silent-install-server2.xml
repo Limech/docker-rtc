@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agent-input clean='true' temporary='true'>
+
+This is an IBM Installation Manager (IM) response file for command-line
+installation of the Jazz Team Server.
+
+Important!  Review the comments in this file with 'TODO' tags and make
+changes as necessary before invoking the installation command below.
+
+To install as administrator, run this command from the directory containing
+this IM response file:
+  ./installc -showVerboseProgress -input silent-install-server2.xml --launcher.ini silent-install.ini -acceptLicense
+
+To install as non-administrator, run this command from the directory
+containing this IM response file:
+  ./userinstc -showVerboseProgress -input silent-install-server2.xml --launcher.ini user-silent-install.ini -acceptLicense
+
+TODO: Review the license agreement included in the 'license' directory
+at the top-level of the product media.  Use the -acceptLicense argument on
+the command line invocation shown above to indicate acceptance of the
+license agreement.
+
+	<server>
+		<!--
+		TODO: Download and unzip the product IM repositories from the
+		"All Downloads" section of the product release page on jazz.net.
+		Verify that the repository locations shown below point to the
+		unzipped IM repositories.
+		-->
+		<repository location='/tmp/im-repo/' />
+		
+		<!-- This repository contains the installation for IM -->
+		<repository location='.' temporary='true' />
+	</server>
+	<install>
+		<offering features='agent_core,agent_jre' id='com.ibm.cic.agent'/>
+	</install>
+	<install>
+		<offering id='com.ibm.team.install.jfs.app.jts'/>
+		<offering id='com.ibm.team.install.jfs.app.product-clm'/>
+	    <offering id='com.ibm.team.install.jfs.app.ldx'/>
+		
+		<offering id='com.ibm.team.install.jfs.app.relm'/>
+		<offering id='com.ibm.team.install.jfs.app.jrs'/>
+		<offering id='com.ibm.team.install.jfs.app.gc'/>
+	
+	    <offering id='com.ibm.team.install.jfs.app.rtc'/>
+		
+		<offering id='com.ibm.team.install.jfs.app.rqm'/>
+		
+	    <offering id='com.ibm.team.install.jfs.app.rdm'/>
+	</install>
+</agent-input>
