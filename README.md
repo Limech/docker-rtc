@@ -1,15 +1,14 @@
 ## Description
 
 Dockerfile to create a Docker image for the IBM Collaborative Lifecycle Management (CLM) suite of tools.
-This deploys the CLM applications within a WebSphere Liberty application server
- ([https://developer.ibm.com/wasdev/](https://developer.ibm.com/wasdev/)) using the 
+This deploys the CLM applications within a 
+ [WebSphere Liberty application server](https://developer.ibm.com/wasdev/) using an
+  [IBM Installation Manager](https://jazz.net/downloads/ibm-installation-manager/) repository.
 
-The plan is to have the Docker image act as a template from which different CLM application sets can be 
-instantiated.
-
-I.e. the first time the container is run, it will finish the installation of the selected application
- and register it to the specified JTS server.  On subsequent runs after, it will simply run the application(s)
- within the image.
+Note that the IBM CLM suite of tools are subject to license agreements and it is the responsability of the user 
+to ensure all licenses and fees have been paid.  Many of the links provided are only available through the IBM 
+download portal and should be obtained in alignment with IBM trademarks and regulations regarding the usage of
+ these tools.
 
 ### Requirements
 This was tested using Docker 1.7.1 on CentOS 6.8 and RHEL 6.8.  The base image for the containers
@@ -55,6 +54,13 @@ At this point, you will have a portion of the CLM applications up and running, h
 This is the current state. This README will be updated to reflect the current state.
 
 ## Roadmap
+
+The plan is to have the Docker image act as a template from which different CLM application sets can be 
+instantiated.
+
+I.e. the first time the container is run, it will finish the installation of the selected application
+ and register it to the specified JTS server.  On subsequent runs after, it will simply run the application(s)
+ within the image.
 
 Left to be done includes:
 
