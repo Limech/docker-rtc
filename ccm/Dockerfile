@@ -23,5 +23,4 @@ COPY repotools-install.sh /opt/IBM/JazzTeamServer/server/
 RUN chmod 755 /opt/IBM/JazzTeamServer/server/repotools-install.sh
 
 CMD ["/opt/IBM/JazzTeamServer/server/server.startup","-run"]
-
     

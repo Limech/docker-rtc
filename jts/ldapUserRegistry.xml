@@ -1,0 +1,14 @@
+<server>
+    <featureManager>
+        <feature>appSecurity-2.0</feature>
+      <feature>ldapRegistry-3.0</feature>
+   </featureManager>
+
+    <ldapRegistry id='ldap' host='${LDAP_SERVER}' port='${LDAP_PORT}' ignoreCase='true' baseDN='dc=gdcan,dc=com' bindDN='cn=${LDAP_USERNAME},ou=Service Accounts,ou=Users,ou=Calgary,dc=gdcan,dc=com' bindPassword='${LDAP_PASSWORD}' ldapType='Microsoft Active Directory' sslEnabled='false' recursiveSearch='true'>
+    <activedFilters userFilter='(&amp;(sAMAccountName=%v)(objectcategory=user))' groupFilter='(&amp;(cn=%v)(objectcategory=group))' userIdMap='user:sAMAccountName' groupIdMap='*:cn' groupMemberIdMap='memberOf:member'>
+    </activedFilters>
+</ldapRegistry>
+ <administrator-role>
+        <group>Jazz_Admins</group>
+    </administrator-role>
+</server>

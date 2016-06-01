@@ -1,0 +1,128 @@
+
+## Temporary file to create the databases.
+## Will be obsolete once the database creation is done remotely, automated, and uses the 
+## dynamic parameters for prefix and passwords for production.
+
+CREATE DATABASE RTC_MikeV_jts 
+GO 
+CREATE DATABASE RTC_MikeV_ccm 
+GO 
+CREATE DATABASE RTC_MikeV_qm 
+GO 
+CREATE DATABASE RTC_MikeV_rm 
+GO 
+CREATE DATABASE RTC_MikeV_dcc 
+GO 
+CREATE DATABASE RTC_MikeV_lqe 
+GO 
+CREATE DATABASE RTC_MikeV_ldx 
+GO 
+CREATE DATABASE RTC_MikeV_relm 
+GO 
+CREATE DATABASE RTC_MikeV_gc 
+GO 
+CREATE DATABASE RTC_MikeV_dw 
+GO 
+CREATE DATABASE RTC_MikeV_csm 
+GO 
+
+CREATE LOGIN RTC_MikeV_jtsDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_jts;
+exec sp_changedbowner 'RTC_MikeV_jtsDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_ccmDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_ccm;
+exec sp_changedbowner 'RTC_MikeV_ccmDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_qmDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_qm;
+exec sp_changedbowner 'RTC_MikeV_qmDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_rmDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_rm;
+exec sp_changedbowner 'RTC_MikeV_rmDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_dccDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_dcc;
+exec sp_changedbowner 'RTC_MikeV_dccDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_lqeDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_lqe;
+exec sp_changedbowner 'RTC_MikeV_lqeDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_ldxDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_ldx;
+exec sp_changedbowner 'RTC_MikeV_ldxDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_relmDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_relm;
+exec sp_changedbowner 'RTC_MikeV_relmDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_gcDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_gc;
+exec sp_changedbowner 'RTC_MikeV_gcDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_dwDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_dw;
+exec sp_changedbowner 'RTC_MikeV_dwDBuser'
+GO 
+CREATE LOGIN RTC_MikeV_csmDBuser
+WITH PASSWORD = 'Passw0rd66';
+USE RTC_MikeV_csm;
+exec sp_changedbowner 'RTC_MikeV_csmDBuser'
+GO
+
+CREATE LOGIN RTC_MikeV_dwStoreDBuser
+WITH PASSWORD = 'Passw0rd66';
+
+ALTER DATABASE RTC_MikeV_jts COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_ccm COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_qm COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_rm COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_dcc COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_lqe COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_ldx COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_relm COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_gc COLLATE SQL_Latin1_General_CP437_CS_AS 
+GO
+ALTER DATABASE RTC_MikeV_dw COLLATE SQL_Latin1_General_CP1_CS_AS
+GO
+
+ALTER DATABASE RTC_MikeV_jts SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_ccm SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_qm SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_rm SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_dcc SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_lqe SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_ldx SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_relm SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_gc SET READ_COMMITTED_SNAPSHOT ON
+GO
+ALTER DATABASE RTC_MikeV_csm SET READ_COMMITTED_SNAPSHOT ON
+GO

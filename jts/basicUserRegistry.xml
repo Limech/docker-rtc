@@ -1,0 +1,28 @@
+<server>
+<!--
+    Licensed Materials - Property of IBM
+    (c) Copyright IBM Corporation 2015. All Rights Reserved.
+    
+    Note to U.S. Government Users Restricted Rights:  
+    Use, duplication or disclosure restricted by GSA ADP Schedule 
+    Contract with IBM Corp. 
+ -->
+    <featureManager>
+        <feature>appSecurity-2.0</feature>
+    </featureManager>
+
+    <basicRegistry id='Jazz' realm='Jazz'>
+        <user name='ADMIN' password='{aes}AOxsQMoce829JJacYG4x3ga87N+UljtW8wNM2oc+QioN'/>
+        <user name='${ADMIN_USER}' password='${ADMIN_PASSWORD_ENCODED}'/>
+        <group name='JazzAdmins'>
+            <member name='ADMIN'/>
+            <member name='${ADMIN_USER}'/>
+        </group>
+        <group name='JazzProjectAdmins'>
+        </group>
+        <group name='JazzGuests'>
+        </group>
+        <group name='JazzUsers'>
+        </group>
+    </basicRegistry>
+</server>

@@ -37,13 +37,14 @@ license agreement.
 		<offering features='agent_core,agent_jre' id='com.ibm.cic.agent'/>
 	</install>
 	<install>
-		<offering id='com.ibm.team.install.jfs.app.jts'/>
+                <offering id='com.ibm.team.install.jfs.app.rtc'/>
+        <!--    <offering id='com.ibm.team.install.jfs.app.jts'/>
 		<offering id='com.ibm.team.install.jfs.app.gc'/>
 		<offering id='com.ibm.team.install.jfs.app.relm'/>
 		<offering id='com.ibm.team.install.jfs.app.ldx'/>
 		<offering id='com.ibm.team.install.jfs.app.jrs'/>
-	<!--	<offering id='com.ibm.team.install.jfs.app.rtc'/>
-	    <offering id='com.ibm.team.install.jfs.app.product-clm'/>
+         	<offering id='com.ibm.team.install.jfs.app.rtc'/>
+	        <offering id='com.ibm.team.install.jfs.app.product-clm'/>
 		<offering id='com.ibm.team.install.jfs.app.rqm'/>  -->
 	</install>
 </agent-input>

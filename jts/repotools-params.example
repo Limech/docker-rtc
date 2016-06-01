@@ -1,0 +1,26 @@
+## This is an example file.  Substitute examples with real values and
+## rename file to 'repotools-params'.
+
+ADMIN_USER=rtc-admin
+ADMIN_PASSWORD=rtc-admin-password
+
+JTS_SITE_URL=https\://myjtsdomain\:9443
+CCM_SITE_URL=https\://myccmdomain\:9443
+
+DB_SERVER=//mydbserver:1433
+DB_PREFIX=RtcDatabasePrefix
+DB_PASSWORD=mydbpassword
+DW_STORE_FOLDER=e\:\\\\somefolder
+
+LDAP_SERVER=ldapserverip
+LDAP_PORT=389
+LDAP_USER="CN\=rtc-admin,DC\=mydomain,DC\=com"
+LDAP_USERNAME=rtc-admin
+LDAP_PASSWORD=rtc-admin-domain-password
+
+SMTP_SERVER=smtp-server.domain.com
+SMTP_PORT=25
+SMTP_FROM_EMAIL=rtc@domain.com
+SMTP_REPLY_EMAIL=user@domain.com
+SMTP_WHITELIST=true
+SMTP_WHITELIST_PATTERN=*@domain.com
